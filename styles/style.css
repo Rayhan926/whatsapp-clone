@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@keyframes animate_fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate_fade {
+  animation: animate_fade 0.2s ease-in-out;
+}
+@keyframes animate_slide_to_bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate_slide_to_bottom {
+  animation: animate_slide_to_bottom 0.2s ease-in-out;
+}
+.typing_p + .lastSeen_p {
+  display: none;
+}
+
+@keyframes typingAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.typing_p_wrapper span {
+  animation: typingAnimation 1s linear infinite;
+}
+.typing_p_wrapper span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.typing_p_wrapper span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing_p_wrapper span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.chatEachLine a {
+  color: #34b7f1;
+}
+.is_link_then_pointer_none a {
+  pointer-events: none;
+}
+.hideChat {
+  display: none !important;
+}
+.line_clamp_1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  max-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .thin_scrollbar {
+    scrollbar-color: #c5c5c5 rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+    scroll-padding: 2px;
+  }
+  .thin_scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+  .thin_scrollbar::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+  }
+}
+
+.tringle_shape::before {
+  content: "";
+  position: absolute;
+  top: 2.8px;
+  right: -9px;
+  width: 20px;
+  height: 15px;
+  border-top: 12px solid transparent;
+  border-left: 12px solid #dcf8c6;
+  transform: rotate(90deg);
+}
+.sender_message + .sender_message .tringle_shape::before {
+  display: none !important;
+}
+.receiver_message .tringle_shape::before {
+  right: auto;
+  border-left: 12px solid #fff;
+  left: -10px;
+  transform: rotateX(180deg) rotateZ(-90deg);
+}
+.receiver_message + .receiver_message .tringle_shape::before {
+  display: none !important;
+}

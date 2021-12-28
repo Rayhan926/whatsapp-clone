@@ -1,0 +1,28 @@
+{
+  "name": "with-tailwindcss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "firebase": "^8.6.8",
+    "html-react-parser": "^1.2.7",
+    "linkifyjs": "^3.0.0-beta.3",
+    "moment": "^2.29.1",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-firebase-hooks": "^3.0.4",
+    "react-icons": "^4.2.0",
+    "react-spinners": "^0.11.0",
+    "timeago-react": "^3.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}
